@@ -1,0 +1,76 @@
+.root {
+    -fx-padding: 20;
+    -fx-background-color: #FFFFFF;
+}
+
+.welcome-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.label-username, .label-password {
+    -fx-font-size: 14px;
+    -fx-text-fill: #5C5C5C;
+}
+
+.input-container {
+    -fx-padding: 10;
+}
+
+.text-field, .password-field {
+    -fx-pref-width: 300px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #FF6F61;
+    -fx-border-radius: 10px;
+    -fx-prompt-text-fill: #C0C0C0;
+}
+
+
+.sign-in-button {
+    -fx-background-color: #FF6F61;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 300px;
+}
+
+.sign-in-button:hover {
+    -fx-background-color: #ff1500;
+}
+
+
+.TxfLogin{
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0px0px2px0px;
+}
+
+.nameLabelLogin {
+    -fx-font-size: 10px;
+    -fx-text-fill: #5C5C5C;
+}
+
+.forgotpass {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF6F61;
+    -fx-background-color: transparent;
+}
+
+.forgotpass:hover {
+    -fx-text-fill: #ff1500;
+}
+
+.Sign-in {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00C2FF;
+    -fx-background-color: transparent;
+}
+
+.Sign-in:hover {
+    -fx-text-fill: #0087b1;
+}
+
+

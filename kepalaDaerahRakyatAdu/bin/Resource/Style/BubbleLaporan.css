@@ -1,0 +1,49 @@
+.laporan-box {
+    -fx-background-color: #ffffff00;
+    -fx-border-color: #FF6F61;
+    -fx-border-radius: 10;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.laporan-box-hover {
+    -fx-background-color: #ffffff00;
+    -fx-border-color: #ff1500;
+    -fx-border-radius: 10;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.laporan-content {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+}
+
+.laporan-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.laporan-details {
+    -fx-font-size: 9px;
+}
+
+.laporan-status {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.status-verifikasi {
+    -fx-text-fill: green;
+}
+
+.status-ditindak-lanjut {
+    -fx-text-fill: blue;
+}
+
+.status-ditolak {
+    -fx-text-fill: red;
+}

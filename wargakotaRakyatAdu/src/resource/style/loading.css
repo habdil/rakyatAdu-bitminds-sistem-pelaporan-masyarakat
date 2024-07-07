@@ -1,0 +1,31 @@
+
+.loading-pane {
+    -fx-alignment: center;
+    -fx-background-color: rgb(255, 255, 255); 
+}
+
+
+.elegant-progress-indicator {
+    -fx-progress-color: #FF6F61; 
+    -fx-pref-width: 40px;      
+    -fx-pref-height: 40px;
+    -fx-background-insets: 0;   
+    -fx-padding: 10px;
+    -fx-border-radius: 50%;     
+    -fx-background-radius: 50%; 
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.2, 0, 0); 
+}
+
+@keyframes rotate {
+    0% {
+        -fx-rotate: 0deg;
+    }
+    100% {
+        -fx-rotate: 360deg;
+    }
+}
+
+.elegant-progress-indicator {
+    -fx-rotate: 0;
+    -fx-animation: rotate 20s linear infinite;
+}

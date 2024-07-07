@@ -1,0 +1,172 @@
+.font-menu {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px0px2px0px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+.font-menu :hover{
+    -fx-background-color: coral;
+    -fx-border-width: 0px0px2px0px;
+    -fx-text-fill: #FF6F61;
+    -fx-font-weight: bold;
+}
+
+.font-uploadberhasil {
+    -fx-border-width: 0px0px2px0px;
+    -fx-text-fill: #09ff00;
+}
+
+
+
+.button-lapor {
+    -fx-background-color: #FF6F61;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 5px;
+    -fx-font-weight: bold;
+}
+
+.button-lapor:hover {
+    -fx-background-color: #ff1500;
+}
+
+
+.button-click {
+    -fx-border-color: #FF6F61;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-color: transparent; 
+    -fx-text-fill: #FF6F61;
+    -fx-font-weight: bold;
+}
+
+.button-bulat {
+    -fx-border-color: #FF6F61;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-color: transparent; 
+    -fx-text-fill: #FF6F61;
+    -fx-font-weight: bold;
+}
+
+.round-button {
+    -fx-background-color: transparent; 
+    -fx-background-radius: 50%; 
+    -fx-border-radius: 50%; 
+    -fx-border-color: #FF6F61; 
+    -fx-border-width: 0.5px; 
+    -fx-min-width: 16px; 
+    -fx-min-height: 16px; 
+    -fx-max-width: 16px; 
+    -fx-max-height: 16px; 
+}
+
+.round-button-active {
+    -fx-background-color:#FF6F61;
+    -fx-background-radius: 50%; 
+    -fx-border-radius: 50%; 
+    -fx-border-color: #FF6F61; 
+    -fx-border-width: 0.5px; 
+    -fx-min-width: 16px; 
+    -fx-min-height: 16px; 
+    -fx-max-width: 16px; 
+    -fx-max-height: 16px; 
+}
+
+.round-button:pressed {
+    -fx-background-color: #FF6F61;
+}
+
+.text-lampiran {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px0px2px0px;
+    -fx-text-fill: #424242;
+    -fx-font-weight: bold;
+}
+
+.text-lampiran:hover {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px0px2px0px;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.text-choice {
+    -fx-background-color: transparent;
+    -fx-border-width: 1px;
+    -fx-text-fill: #AAAAAA;
+    -fx-border-style: solid;
+    -fx-border-color: #ACACAC;
+}
+
+.tf-sendMessage {
+    -fx-background-radius: 10px;
+    -fx-border-color: #FF6F61;
+    -fx-border-radius: 10px;
+    -fx-prompt-text-fill: #C0C0C0;
+}
+
+.button-send {
+    -fx-background-color: #FF6F61;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 77px;
+    -fx-font-weight: bold;
+}
+
+.button-send:hover {
+    -fx-background-color: #ff1500;
+}
+
+.list-cell-2 {
+    -fx-background-color: rgba(230, 41, 41, 0);
+    -fx-padding: 5px;
+}
+
+.message-bubble {
+    -fx-fill: #FF6F61;
+    -fx-background-radius: 10px;
+}
+
+.message-namaLengkap {
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-fill : #FFFFFF;
+    -fx-underline: true;
+}
+
+.message-text {
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+    -fx-fill : #FFFFFF;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .scroll-bar .thumb,
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+}
+
+.profile {
+    -fx-pref-width: 500px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #FF6F61;
+    -fx-border-radius: 10px;
+    -fx-prompt-text-fill: #C0C0C0;
+}
+

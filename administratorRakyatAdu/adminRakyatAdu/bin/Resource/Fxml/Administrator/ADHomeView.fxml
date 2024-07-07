@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Administrator.ADHomeController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imageassets/Administrator/bg-left.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="86.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imageassets/WargaKota/profile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="namaStaff" alignment="CENTER" layoutY="171.0" prefHeight="17.0" prefWidth="272.0" text="ADMIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="193.0" prefHeight="17.0" prefWidth="272.0" text="Administrator" textFill="WHITE" />
+      <Button fx:id="idDashboard" layoutX="70.0" layoutY="283.0" mnemonicParsing="false" onAction="#btnDashboard" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="DASHBOARD" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="idAddPetugas" layoutX="70.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnAddPetugas" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="TAMBAHKAN PETUGAS">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="idLogout" layoutX="61.0" layoutY="610.0" mnemonicParsing="false" onAction="#tblLogout" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="Logout" />
+      <ImageView fitHeight="650.0" fitWidth="728.0" layoutX="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imageassets/Administrator/bg-utama.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbLaporanMasuk" alignment="CENTER" layoutX="383.0" layoutY="218.0" prefHeight="45.0" prefWidth="142.0" styleClass="font-menu" text="0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbLaporanTindakan" alignment="CENTER" layoutX="563.0" layoutY="219.0" prefHeight="45.0" prefWidth="152.0" styleClass="font-menu" text="0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbLaporanSelesai" alignment="CENTER" layoutX="743.0" layoutY="218.0" prefHeight="45.0" prefWidth="152.0" styleClass="font-menu" text="0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="idUmpanBalik" layoutX="70.0" layoutY="423.0" mnemonicParsing="false" onAction="#btnUmpanBalik" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="UMPAN BALIK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <PieChart fx:id="tblPieChart" layoutX="670.0" layoutY="314.0" prefHeight="326.0" prefWidth="325.0" />
+      <LineChart fx:id="tblLineGraph" layoutX="288.0" layoutY="324.0" prefHeight="314.0" prefWidth="388.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="idDataWargaKota" layoutX="746.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnDataWargaKota" styleClass="button-lapor" text="DATA - WARGA KOTA" />
+      <Button fx:id="idDataDinasTerkait" layoutX="376.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnDataDinasTerkait" styleClass="button-lapor" text="DATA - DINAS TERKAIT" />
+      <Button fx:id="idLaporanMasuk" layoutX="390.0" layoutY="214.0" mnemonicParsing="false" onAction="#clickLaporanMasuk" prefHeight="74.0" prefWidth="132.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="idTindakan" layoutX="574.0" layoutY="214.0" mnemonicParsing="false" onAction="#clickTindakan" prefHeight="74.0" prefWidth="132.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="idLaporanSelesai" layoutX="752.0" layoutY="215.0" mnemonicParsing="false" onAction="#clickLaporanSelesai" prefHeight="74.0" prefWidth="132.0" style="-fx-background-color: transparent;" />
+   </children>
+   <stylesheets>
+      <URL value="@../Style/Home.css" />
+      <URL value="@../../Style/HomeWargaKota.css" />
+   </stylesheets>
+</AnchorPane>

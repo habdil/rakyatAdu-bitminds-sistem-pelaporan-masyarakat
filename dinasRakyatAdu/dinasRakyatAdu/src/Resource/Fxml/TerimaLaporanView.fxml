@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Alert.TerimaLaporanController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imageassets/bg-alert.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="176.0" layoutY="202.0" text="Menerima">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="267.0" text="Apakah Anda yakin ingin menerima laporan ini ?">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="137.0" layoutX="189.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imageassets/sukses.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="idSetuju" layoutX="283.0" layoutY="394.0" mnemonicParsing="false" onAction="#clickSetuju" prefHeight="46.0" prefWidth="157.0" style="-fx-background-color: #00C500;" text="Setuju" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="idBatal" layoutX="78.0" layoutY="394.0" mnemonicParsing="false" onAction="#clickBatal" prefHeight="46.0" prefWidth="157.0" style="-fx-background-color: #FFFFFF;" text="Batal">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

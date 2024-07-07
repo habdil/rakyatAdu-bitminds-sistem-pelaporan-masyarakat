@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" stylesheets="@../../Style/HomeWargaKota.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Administrator.DataDinasController">
+   <children>
+      <Label layoutX="255.0" layoutY="32.0" text="DAFTAR PETUGAS DINAS TERKAIT" textFill="#ff5d5d">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="idTableDinas" layoutX="20.0" layoutY="113.0" prefHeight="515.0" prefWidth="962.0">
+        <columns>
+          <TableColumn id="namaLengkap" fx:id="coloumnNamaLengkap" prefWidth="185.0" text="Nama Lengkap" />
+          <TableColumn id="username" fx:id="coloumnUsername" minWidth="0.0" prefWidth="181.0" text="Username" />
+            <TableColumn id="password" fx:id="coloumnPassword" minWidth="0.0" prefWidth="198.0" text="Password" />
+            <TableColumn id="alamat" fx:id="coloumnAlamat" minWidth="0.0" prefWidth="215.0" text="Alamat Dinas Terkait" />
+            <TableColumn id="nomorKontak" fx:id="coloumnNomorKontak" minWidth="0.0" prefWidth="182.0" text="Nomor Kontak" />
+        </columns>
+      </TableView>
+      <Button fx:id="lbKembali" layoutX="913.0" layoutY="9.0" mnemonicParsing="false" onAction="#clickKembali" prefHeight="23.0" prefWidth="76.0" styleClass="button-lapor" text="Back" />
+      <Button fx:id="idBlokir" layoutX="21.0" layoutY="81.0" mnemonicParsing="false" onAction="#clickBlokir" styleClass="button-lapor" text="Blokir Akun" />
+   </children>
+</AnchorPane>

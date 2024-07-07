@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Administrator.ADTambahController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imageassets/Administrator/bg-left.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="86.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imageassets/WargaKota/profile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="namaStaff" alignment="CENTER" layoutY="171.0" prefHeight="17.0" prefWidth="272.0" text="ADMIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="193.0" prefHeight="17.0" prefWidth="272.0" text="Administrator" textFill="WHITE" />
+      <Button fx:id="idDashboard" layoutX="70.0" layoutY="283.0" mnemonicParsing="false" onAction="#btnDashboard" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="DASHBOARD">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="idAddPetugas" layoutX="70.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnAddPetugas" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="TAMBAHKAN PETUGAS" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="idLogout" layoutX="61.0" layoutY="610.0" mnemonicParsing="false" onAction="#tblLogout" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="Logout" />
+      <ImageView fitHeight="650.0" fitWidth="728.0" layoutX="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imageassets/Administrator/bg-utama-add.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="idUmpanBalik" layoutX="70.0" layoutY="423.0" mnemonicParsing="false" onAction="#btnUmpanBalik" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="UMPAN BALIK">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfNamaLengkap" layoutX="339.0" layoutY="271.0" prefHeight="25.0" prefWidth="339.0" styleClass="tf-sendMessage" />
+      <TextField fx:id="tfAlamat" layoutX="339.0" layoutY="340.0" prefHeight="25.0" prefWidth="339.0" styleClass="tf-sendMessage" />
+      <TextField fx:id="tfNomorKontak" layoutX="339.0" layoutY="409.0" prefHeight="25.0" prefWidth="339.0" styleClass="tf-sendMessage" />
+      <TextField fx:id="tfUsername" layoutX="339.0" layoutY="476.0" prefHeight="25.0" prefWidth="339.0" styleClass="tf-sendMessage" />
+      <TextField fx:id="tfPass" layoutX="339.0" layoutY="548.0" prefHeight="25.0" prefWidth="339.0" styleClass="tf-sendMessage" />
+      <Button fx:id="btnDaftar" layoutX="339.0" layoutY="598.0" mnemonicParsing="false" onAction="#clickDaftarkan" prefHeight="35.0" prefWidth="140.0" styleClass="button-lapor" text="DAFTARKAN" />
+   </children>
+   <stylesheets>
+      <URL value="@../Style/Home.css" />
+      <URL value="@../../Style/HomeWargaKota.css" />
+   </stylesheets>
+</AnchorPane>

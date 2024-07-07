@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Menu.HomeController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imageassets/WargaKota/backgorund-left-home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="651.0" fitWidth="797.0" layoutX="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imageassets/WargaKota/bacground-right-home.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="758.0" layoutY="240.0" mnemonicParsing="false" onAction="#tblPetunjuk" prefHeight="21.0" prefWidth="20.0" styleClass="button-click" text="?">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <TextField fx:id="judulLaporan" layoutX="402.0" layoutY="269.0" prefHeight="32.0" prefWidth="426.0" promptText="Ketik Judul Laporan Anda*" />
+      <TextArea fx:id="isiLaporan" layoutX="402.0" layoutY="308.0" prefHeight="75.0" prefWidth="426.0" promptText="Ketik Isi Laporan Anda*" wrapText="true" />
+      <DatePicker fx:id="tanggal" layoutX="402.0" layoutY="392.0" prefHeight="25.0" prefWidth="425.0" promptText="Pilih Tanggal Kejadian*" />
+      <TextField fx:id="lokasi" layoutX="403.0" layoutY="427.0" prefHeight="25.0" prefWidth="424.0" promptText="Ketik Lokasi Kejadian*" />
+      <ComboBox fx:id="instansi" layoutX="404.0" layoutY="464.0" prefHeight="27.0" prefWidth="422.0" promptText="Pilih Instansi Tujuan*" styleClass="text-choice" />
+      <ComboBox fx:id="kategori" layoutX="405.0" layoutY="499.0" prefHeight="27.0" prefWidth="421.0" promptText="Pilih Kategori Laporan Anda*" styleClass="text-choice" />
+      <Button fx:id="upload" layoutX="442.0" layoutY="551.0" mnemonicParsing="false" styleClass="text-lampiran" text="Upload Lampiran" />
+      <Button layoutX="722.0" layoutY="552.0" mnemonicParsing="false" onAction="#tblLapor" prefHeight="26.0" prefWidth="114.0" styleClass="button-lapor" text="Lapor!" />
+      <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="54.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imageassets/WargaKota/profile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="namaLengkap" alignment="CENTER" layoutX="-1.0" layoutY="152.0" prefHeight="20.0" prefWidth="204.0" styleClass="font-menu" text="PERSON 1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="171.0" prefHeight="17.0" prefWidth="204.0" styleClass="font-menu" text="Warga" />
+      <Button fx:id="editProfile" layoutX="35.0" layoutY="220.0" mnemonicParsing="false" onAction="#tbEditProfile" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="Edit Profile">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="beranda" layoutX="47.0" layoutY="279.0" mnemonicParsing="false" onAction="#tblBeranda" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="BERANDA">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="status" layoutX="47.0" layoutY="328.0" mnemonicParsing="false" onAction="#tblStatusLaporan" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="STATUS LAPORAN">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="umpanBalik" layoutX="48.0" layoutY="382.0" mnemonicParsing="false" onAction="#tblUmpanBalik" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="UMPAN BALIK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="58.0" layoutY="610.0" mnemonicParsing="false" onAction="#tblLogout" onMouseEntered="#onMouse" onMouseExited="#offMouse" styleClass="font-menu" text="Logout" />
+      <Button fx:id="colorPengaduan" accessibleRole="TOGGLE_BUTTON" layoutX="516.0" layoutY="205.0" mnemonicParsing="false" onAction="#tblKlasifikasiLaporan" prefHeight="24.0" prefWidth="16.0" styleClass="round-button">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button fx:id="colorAspirasi" accessibleRole="TOGGLE_BUTTON" layoutX="658.0" layoutY="205.0" mnemonicParsing="false" onAction="#tblKlasifikasiLaporan" prefHeight="24.0" prefWidth="16.0" styleClass="round-button">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button fx:id="colorKonfirmasi" accessibleRole="TOGGLE_BUTTON" layoutX="807.0" layoutY="205.0" mnemonicParsing="false" onAction="#tblKlasifikasiLaporan" prefHeight="24.0" prefWidth="16.0" styleClass="round-button">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Label fx:id="uploadFile" layoutX="451.0" layoutY="578.0" prefHeight="16.0" prefWidth="159.0" styleClass="font-uploadberhasil">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="uploadSize" layoutX="515.0" layoutY="511.0">
+         <font>
+            <Font name="SansSerif Regular" size="6.0" />
+         </font>
+      </Label>
+      <Button fx:id="upload1" layoutX="398.0" layoutY="560.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="31.0" styleClass="text-lampiran" />
+   </children>
+   <stylesheets>
+      <URL value="@../../style/WargaKota/HomeWargaKota.css" />
+      <URL value="@../../style/Menu/HomeWargaKota.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,9 @@
+.button-exit {
+    -fx-background-color:transparent;
+    -fx-fill: black;
+    -fx-font-weight: bold;
+}
+
+.ng-pane {
+    -fx-background-color:white;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="824.0" styleClass="root" stylesheets="@../Style/LoginAndRegisView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <Label layoutX="68.0" layoutY="157.0" styleClass="label-username" text="Username" />
+      <TextField fx:id="tfUsername" layoutX="68.0" layoutY="180.0" prefHeight="42.0" prefWidth="278.0" styleClass="input-container" />
+      <Label layoutX="70.0" layoutY="239.0" styleClass="label-password" text="Password" />
+      <PasswordField fx:id="tfPassword" layoutX="70.0" layoutY="259.0" prefHeight="42.0" prefWidth="278.0" styleClass="password-field" />
+      <Button fx:id="idLogin" layoutX="70.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="42.0" prefWidth="300.0" styleClass="sign-in-button" text="Login" />
+      <Label layoutX="87.0" layoutY="104.0" styleClass="welcome-label" text="Welcome to RakyatAdu">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ImageView id="logo" fitHeight="75.0" fitWidth="104.0" layoutX="172.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="422.0" prefHeight="473.0" prefWidth="402.0">
+         <children>
+            <ImageView fitHeight="473.0" fitWidth="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imageassets/right-banner-login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="240.0" layoutY="303.0" mnemonicParsing="false" onAction="#tblForgot" styleClass="forgotpass" text="Forgot Password" />
+      <Label layoutX="9.0" layoutY="8.0" styleClass="welcome-label" text="ADMINISTRATOR" />
+   </children>
+</AnchorPane>
